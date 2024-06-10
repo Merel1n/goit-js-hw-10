@@ -37,6 +37,7 @@ flatpickr('#datetime-picker', {
         iconUrl: imageUrl,
         iconColor: '#FAFAFB',
         imageWidth: 302,
+        theme: 'dark',
       });
     } else {
       userSelectedDate = selectedDates[0];
