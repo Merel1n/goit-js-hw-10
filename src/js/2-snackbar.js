@@ -5,5 +5,4 @@ console.log(`this is input ${inputValue.value}`);
 formElem.addEventListener('submit', e => {
   e.preventDefault;
   e = inputValue.value;
-  const promis = new Promise();
 });
