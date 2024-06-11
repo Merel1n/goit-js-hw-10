@@ -37,7 +37,7 @@ body {
 section {
   margin-bottom: 36px;
 }
-input {
+input[type='text'] {
   border: solid 1px #808080;
   border-radius: 4px;
   width: 272px;
@@ -73,4 +73,96 @@ button:disabled {
 }
 button:hover {
   background: #6c8cff;
+}
+.form {
+  background-color: #fff;
+  margin-top: 36px;
+
+  width: 360px;
+  box-sizing: border-box;
+}
+.form :first-child {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 16px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+.form input[type='number'] {
+  border: solid 1px #808080;
+  border-radius: 4px;
+  height: 40px;
+  background: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+.form input[type='number']:hover,
+.form input[type='number']:focus,
+.form input[type='number']:active {
+  border: solid 2px #4e75ff;
+}
+.form fieldset {
+  border: 1px solid #808080;
+  border-radius: 4px;
+  padding: 24px 48px 8px 48px;
+  margin: 0 0 24px;
+  display: flex;
+  gap: 48px;
+}
+
+.form legend {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+.form fieldset label {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #2e2f42;
+  width: 104px;
+  height: 32px;
+}
+.form input[type='radio'] {
+  width: 100%;
+  margin: 4px 8px 4px 4px;
+}
+
+.form button {
+  width: 100%;
+  background-color: #4e75ff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+
+  border-radius: 8px;
+  padding: 8px 16px;
+  height: 40px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+}
+
+.form button:hover {
+  background-color: #6c8cff;
 }
