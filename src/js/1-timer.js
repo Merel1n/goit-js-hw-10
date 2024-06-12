@@ -52,12 +52,13 @@ refs.button.addEventListener('click', () => {
     const currentTime = Date.now();
 
     const diff = userSelectedDate - currentTime;
-    const time = convertMs(diff);
-    const str = getTime(time);
+    if (diff > 0) {
+      const time = convertMs(diff);
+      const str = getTime(time);
+    } else {
+      clearInterval(initTimeId);
+    }
   }, 1000);
-  setTimeout(() => {
-    clearInterval(initTimeId);
-  }, userSelectedDate - Date.now());
 });
 function convertMs(ms) {
   // Number of milliseconds per unit of time
